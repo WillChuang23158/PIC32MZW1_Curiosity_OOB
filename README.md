@@ -446,7 +446,15 @@ In case you want to re-flash the device, perform the following steps:
 ## Regenerating the demo with Harmony 3
 
 To add additional features to the OOB demo, you might have to regenerate the demo code using Harmony3 after adding additional components or changing the existing configuration.
-Ensure that you use the same version or Harmony components used in the original demo codebase while regenerating code. You can see the version dependencies of the demo in `harmony-manifest-success.yml` file found at `src\firmware\src\config\pic32mz_w1_curiosity` into Harmony3 content manager. 
+Ensure that you use the same version or Harmony 3 components used in the original demo codebase while regenerating code. You can see the version dependencies of the demo in `harmony-manifest-success.yml` file found at `src\firmware\src\config\pic32mz_w1_curiosity` into Harmony3 content manager. 
+
+In case of a missmatch between the Harmony 3 components present in the demo and the ones available in disk, Harmony3 Configurator will popup a warning screen during launch. In the case of the sample shown below, the MHC component available in disk is `3.6.0` while the version used in the project is `3.5.1`. 
+
+<p align="center">
+<img src="resources/media/image25.png" width=480/>
+</p>
+
+It is recommended to use the same versions used in the project while regenerationg the project. 
 
 To sync your Harmony3 setup to match the versions used in the demo, folow these steps:
 
